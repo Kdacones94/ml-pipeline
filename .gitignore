@@ -1,0 +1,92 @@
+STREAMING_CHUNK: Setting up standard Python and environment ignores...
+
+Byte-compiled / optimized / DLL files
+
+pycache/
+*.py[cod]
+*$py.class
+
+Virtual Environment
+
+mh/
+venv/
+env/
+.env/
+.venv/
+
+STREAMING_CHUNK: Adding specific user-requested files and image formats...
+
+Specific requested files
+
+setup_project (1).py
+
+Image files
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+STREAMING_CHUNK: Adding ml-pipeline specific directories...
+
+ml-pipeline specific directories
+
+ml-pipeline/docs/images/
+ml-pipeline/docs/non-live/
+
+ml-pipeline/logs/
+ml-pipeline/output/
+ml-pipeline/clinical_and_data_models.py
+
+STREAMING_CHUNK: Configuring IDE and editor exclusions...
+
+VS Code / IDE settings
+
+.vscode/
+.idea/
+*.code-workspace
+.spyderproject
+.ropeproject
+
+STREAMING_CHUNK: Adding security, secrets, and configuration files...
+
+Environments and Secrets
+
+.env
+.env.*
+.envrc
+secrets.yml
+secrets.json
+config.ini
+config.json
+
+Keys and Credentials
+
+*.pem
+*.key
+*.cert
+*.cer
+credentials.json
+client_secret.json
+auth.json
+oauth.json
+id_rsa
+id_rsa.pub
+
+STREAMING_CHUNK: Adding OS-generated files and logs...
+
+OS generated files
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+Logs and databases
+
+*.log
+*.sqlite
+*.sqlite3

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mind_bender_machine_learning"
+version = "0.1.0"
+description = "Clinical EDW Star Schema & Cohort Transition ML Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sqlmodel>=0.0.46",
+    "pydantic>=2.13.5",
+    "sqlalchemy>=2.0.54",
+    "pandas>=3.0.6",
+    "numpy>=2.5.3",
+    "scikit-learn>=1.9.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
