@@ -1,4 +1,5 @@
 from datetime import datetime
+from enum import Enum
 from sqlmodel import Session
 from src.models.schemas import (
     TransitionMatrix3x3,
@@ -11,6 +12,12 @@ class CohortStateMachine:
     """Determines cohort transitions from 3x3 transition metrics and logs facts."""
 
     STATES = ["LOW_RISK", "MODERATE_RISK", "HIGH_RISK_DETERIORATION"]
+    
+
+    # TODO - See how this impact the calculation of the transition counts
+    # ENUM_STATES = Enum("LOW_RISK"= 1,
+        "MODERATE_RISK" = 2,
+        "HIGH_RISK_DETERIORATION" = 3)
 
     def evaluate_transition(
         self, matrix: TransitionMatrix3x3, current_state: str = "LOW_RISK"
